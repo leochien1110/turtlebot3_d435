@@ -87,8 +87,8 @@ chmod +x test.py self_drive.py
         <xacro:include filename="$(find packagename)/urdf/_d435.urdf.xacro" />
     ...
         <xacro:sensor_d435 name="camera" topics_ns="camera" parent="base_link" publish_pointcloud="true">
-        <origin xyz="0 0 0" rpy="0 0 0" />
-    </xacro:sensor_d435>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+        </xacro:sensor_d435>
     ```
     and change your desired orginal pose related to `base_link`
 1. In the launch file, don't forget to publish the `tf` tree for rviz to visualize
