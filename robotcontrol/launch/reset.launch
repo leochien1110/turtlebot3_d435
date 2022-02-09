@@ -1,0 +1,5 @@
+<launch>
+    <node pkg="robotcontrol" type="reset.py" name="reset_world" output="screen">
+
+    </node>
+</launch>
