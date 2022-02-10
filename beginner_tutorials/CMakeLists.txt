@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0.2)
-project(beginner_tutorial)
+project(beginner_tutorials)
 
 ## Compile as C++11, supported in ROS Kinetic and newer
 # add_compile_options(-std=c++11)
@@ -107,7 +107,7 @@ generate_messages(
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
 #  INCLUDE_DIRS include
-#  LIBRARIES beginner_tutorial
+#  LIBRARIES beginner_tutorials
  CATKIN_DEPENDS roscpp rospy std_msgs message_runtime
 #  DEPENDS system_lib
 )
@@ -125,7 +125,7 @@ include_directories(
 
 ## Declare a C++ library
 # add_library(${PROJECT_NAME}
-#   src/${PROJECT_NAME}/beginner_tutorial.cpp
+#   src/${PROJECT_NAME}/beginner_tutorials.cpp
 # )
 
 ## Add cmake target dependencies of the library
@@ -138,9 +138,11 @@ target_link_libraries(hello.exe ${catkin_LIBRARIES})
 
 add_executable(talker src/talker.cpp)
 target_link_libraries(talker ${catkin_LIBRARIES})
+add_dependencies(talker beginner_tutorials_generate_messages_cpp)
 
 add_executable(listener src/listener.cpp)
 target_link_libraries(listener ${catkin_LIBRARIES})
+add_dependencies(listener beginner_tutorials_generate_messages_cpp)
 
 add_executable(add_two_ints_server src/add_two_ints_server.cpp)
 target_link_libraries(add_two_ints_server ${catkin_LIBRARIES})
@@ -150,9 +152,11 @@ target_link_libraries(add_two_ints_client ${catkin_LIBRARIES})
 
 add_executable(id_check_server src/id_check_server.cpp)
 target_link_libraries(id_check_server ${catkin_LIBRARIES})
+add_dependencies(id_check_server beginner_tutorials_generate_messages_cpp)
 
 add_executable(id_check_client src/id_check_client.cpp)
 target_link_libraries(id_check_client ${catkin_LIBRARIES})
+add_dependencies(id_check_client beginner_tutorials_generate_messages_cpp)
 
 ## Declare a C++ executable
 ## With catkin_make all packages are built within a single CMake context

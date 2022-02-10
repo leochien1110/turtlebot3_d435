@@ -40,7 +40,7 @@ Gazebo: 11
     this will generate a `librealsense_gazebo_plugin.so` file to simulate D435 in Gazebo
 # Explanation
 ## Packages
-- **beginner_tutorial**: basic ROS operations e.g. node, topics, services
+- **beginner_tutorials**: basic ROS operations e.g. node, topics, services
 
 - **realsense_gazebo_plugin**: to generate RealSense sensor simulation plugin for Gazebo to use
 
