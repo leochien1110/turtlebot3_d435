@@ -7,8 +7,11 @@ I will describe how to import D435 into your own model/world because I found the
 
 # Configuration
 Althoug the configuation should not be the problem, still I put them down below for those who would like to know.
+
 OS: Ubuntu 20.04
+
 ROS: noetic
+
 Gazebo: 11
 
 
