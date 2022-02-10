@@ -3,6 +3,15 @@ This is my personal ROS practice example that put Turtlebot burger with Realsens
 
 I will describe how to import D435 into your own model/world because I found there are only few instruction about do so. For more models (e.g. D455), you can go to RealSense offical Github to find the urdf/xacro files and build the `.so` file yourself.
 
+<img src="media/capture.png" alt="Turtlebot with D435"  title="Turtlebot with D435" />
+
+# Configuration
+Althoug the configuation should not be the problem, still I put them down below for those who would like to know.
+OS: Ubuntu 20.04
+ROS: noetic
+Gazebo: 11
+
+
 # Install
 1. install ROS and packages
     ```bash
@@ -12,7 +21,7 @@ I will describe how to import D435 into your own model/world because I found the
 
 1. Download this repo
     ```bash
-    # build the directories
+    # build your work space directories, e.g. `catkin_ws` in my example
     mkdir catkin_ws
     cd catkin_ws
     mkdir src
@@ -25,27 +34,27 @@ I will describe how to import D435 into your own model/world because I found the
     cd ..
     catkin_make
     ```
-    this will generate a `librealsense_gazebo_plugin.so` file to simulate D435 in the Gazebo
+    this will generate a `librealsense_gazebo_plugin.so` file to simulate D435 in Gazebo
 # Explanation
 ## Packages
-- beginner_tutorial: the most basic ROS operations e.g. node, topics, services
+- **beginner_tutorial**: basic ROS operations e.g. node, topics, services
 
-- realsense_gazebo_plugin: to generate RealSense sensor simulation plugin for Gazebo to use
+- **realsense_gazebo_plugin**: to generate RealSense sensor simulation plugin for Gazebo to use
 
-- realsense2_description: RealSense sensor models
+- **realsense2_description**: RealSense sensor models
 
-- robotcontrol: simple navigation codes. The original codes are from the first link in the reference.
+- **robotcontrol**: simple navigation codes. The original codes are from the first link in the reference.
 
-- turtlebot3: turtlebot3 models
+- **turtlebot3**: turtlebot3 models
 
-- turtlebot3_msgs: turtlebot3 messages
+- **turtlebot3_msgs**: turtlebot3 messages
 
-- turtlebot3_simulations: turtlebot3 simulation files (e.g. world models, .world, .launch)
+- **turtlebot3_simulations**: turtlebot3 simulation files (e.g. world models, .world, .launch)
 
 
 
 # Usage
-> Note: I kind of messed up the original turtlebot3 repo by modifying it directly, but it is still worth to play around with it :P
+> :bulb: I kind of messed up the original turtlebot3 repos by modifying it directly, but it is still worth to play around with it :stuck_out_tongue:
 ## Launch the world
 To launch the simulation that includes turtlebot3_burger + RealSense D435 + Tunnel
 ```bash
@@ -116,4 +125,5 @@ If you have any question please don't hesitate to contact me:
 Wen-Yu Chien: leochien1110@gmail.com
 
 [LinkedIn](https://www.linkedin.com/in/wenyu-chien/)
+
 [Gitpage](https://leochien1110.github.io)
