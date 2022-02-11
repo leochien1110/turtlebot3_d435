@@ -58,6 +58,21 @@ Gazebo: 11
 
 # Usage
 > :bulb: I kind of messed up the original turtlebot3 repos by modifying it directly, but it is still worth to play around with it :stuck_out_tongue:
+## Initial Setup
+Link/Source the bulit project, replace `catkin_ws` with your workspace name:
+```bash
+cd catkin_ws
+echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
+source ~/.bash
+```
+Setup Turtlebot default model to burger:
+```bash
+ echo "export TURTLEBOT3_MODEL=burger" >> ~/.bashrc
+ source ~/.bash
+ ```
+
+
+
 ## Launch the world
 To launch the simulation that includes turtlebot3_burger + RealSense D435 + Tunnel
 ```bash
@@ -68,7 +83,7 @@ roslaunch turtlebot3_gazebo turtlebot3_tunnel.launch
 First change the permission of the files
 ```bash
 roscd robotcontrol/src
-chmod +x test.py self_drive.py
+chmod +x *.py
 ```
 1. Move the robot straight
     ```bash
@@ -77,6 +92,11 @@ chmod +x test.py self_drive.py
 1. Move the robot to drive out of the tunnel
     ```bash
     ./self_drive.py
+    ```
+    > Currently this script cannot be terminated, you have to close the terminal. ToBeFixed!
+1. Reset the world
+    ```bash
+    ./reset.py
     ```
 
 # Import RealSense D435 into your model/wrold
