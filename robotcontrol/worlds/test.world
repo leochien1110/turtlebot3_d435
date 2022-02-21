@@ -37,7 +37,11 @@
         
         <!-- import the model here -->
         <include>
-            <uri>model://test</uri>
+            <uri>model://rail</uri>
+        </include>
+
+        <include>
+            <uri>model://train</uri>
         </include>
 
         <scene>

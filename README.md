@@ -111,15 +111,29 @@ chmod +x test.py self_drive.py
     ```
     > For more detailes, please check the files that related to `burger` model or the keyword `tunnel` under `turtlebot3_simulations/turtlebot3_gazebo`.
 
+# Velodyne
+Check the READMEs in `velodyne_plugin_tutorial` and `velodune_simulator` for more details.
+
+
+# Resource
+* [tunnel cad file](turtlebot3_simulations/turtlebot3_gazebo/models/turtlebot3_tunnel/meshes/tunnel.dae)
 
 # Reference
-[ROS系統控制自走車搭配點雲雷達(隧道檢測裝置) - 微醺咖啡](https://ithelp.ithome.com.tw/users/20129807/ironman/3282?page=1)
+* [ROS系統控制自走車搭配點雲雷達(隧道檢測裝置) - 微醺咖啡](https://ithelp.ithome.com.tw/users/20129807/ironman/3282?page=1)
 
-[Gazebo Tutorial](http://gazebosim.org/tutorials?cat=connect_ros)
+* [Gazebo Tutorial](http://gazebosim.org/tutorials?cat=connect_ros)
 
-[realsense2_description - issaiass](https://github.com/issaiass/realsense2_description)
+* [turtlebot3](https://github.com/ROBOTIS-GIT/turtlebot3)
 
-[realsense_gazebo_plugin - pal-robotics](https://github.com/pal-robotics/realsense_gazebo_plugin)
+* [turtlebot3_msgs](https://github.com/ROBOTIS-GIT/turtlebot3_msgs)
+
+* [turtlebot3_simulations](https://github.com/ROBOTIS-GIT/turtlebot3_simulations)
+
+* [realsense2_description - issaiass](https://github.com/issaiass/realsense2_description)
+
+* [realsense_gazebo_plugin - pal-robotics](https://github.com/pal-robotics/realsense_gazebo_plugin)
+
+* [velodyne_simulator](https://bitbucket.org/DataspeedInc/velodyne_simulator/src/master/)
 
 
 # Contact Info
@@ -129,4 +143,4 @@ Wen-Yu Chien: leochien1110@gmail.com
 
 [LinkedIn](https://www.linkedin.com/in/wenyu-chien/)
 
-[Gitpage](https://leochien1110.github.io)
+[GitPage](https://leochien1110.github.io)
